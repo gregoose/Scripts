@@ -1,0 +1,12 @@
+var k = this.getField("ComboBox1").value;
+var ocgArray = this.getOCGs();
+for (var i = 0; i < ocgArray.length; i++){
+	app.alert("Layer " + ocgArray[i].name + ": State: " + ocgArray[i].state)
+	if(ocgArray[i].name == k.value){
+		ocgArray[i].state = true;
+	}
+	else {
+		ocgArray[i].state = false;
+		
+	}
+}

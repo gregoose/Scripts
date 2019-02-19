@@ -1,0 +1,98 @@
+var ocgArray = this.getOCGs();
+console.println("layer array created");
+console.println("Starting switch...");
+var k = this.getField("ComboBox1").value;
+console.println("ComboBox1 value is: " + k);
+switch (k) {
+case 0:
+	console.println("Entering case 0...");
+	for (var i = 0; i < ocgArray.length; i++){
+		ocgArray[i].state = true;
+	}
+	break;
+case 1:
+	console.println("Entering case 1...");
+	for (var i = 0; i < ocgArray.length; i++){
+		if (ocgArray[i].name == "CAT1"){
+			ocgArray[i].state = true;
+		}
+		else {
+			ocgArray[i].state = false;
+		}
+	}
+	break;
+case 2:
+	console.println("Entering case 2...");
+	for (var i = 0; i < ocgArray.length; i++){
+		if (ocgArray[i].name == "CAT2"){
+			ocgArray[i].state = true;
+		}
+		else {
+			ocgArray[i].state = false;
+		}
+	}
+	break;
+case 3:
+	console.println("Entering case 3...");
+	for (var i = 0; i < ocgArray.length; i++){
+		if (ocgArray[i].name == "CAT3"){
+			ocgArray[i].state = true;
+		}
+		else {
+			ocgArray[i].state = false;
+		}
+	}
+	break;
+case 4:
+	console.println("Entering case 4...");
+	for (var i = 0; i < ocgArray.length; i++){
+		if (ocgArray[i].name == "CAT4"){
+			ocgArray[i].state = true;
+		}
+		else {
+			ocgArray[i].state = false;
+		}
+	}
+	break;
+case 5:
+	console.println("Entering case 5...");
+	for (var i = 0; i < ocgArray.length; i++){
+		if (ocgArray[i].name == "CAT5"){
+			ocgArray[i].state = true;
+		}
+		else {
+			ocgArray[i].state = false;
+		}
+	}
+	break;
+case 6:
+	console.println("Entering case 6...");
+	for (var i = 0; i < ocgArray.length; i++){
+		if (ocgArray[i].name == "CAT6"){
+			ocgArray[i].state = true;
+		}
+		else {
+			ocgArray[i].state = false;
+		}
+	}
+	break;
+case 99:
+	console.println("Entering case 99...");
+	for (var i = 0; i < ocgArray.length; i++){
+		if (ocgArray[i].name == "BASE"){
+			ocgArray[i].state = true;
+		}
+		else {
+			ocgArray[i].state = false;
+		}
+	}
+	break;
+
+}
+console.println("Switch Complete.");
+console.println("Setting base to visible....");
+for (var i = 0; i < ocgArray.length; i++){
+	if (ocgArray[i].name == "BASE"){
+		ocgArray[i].state = true;
+	}
+}

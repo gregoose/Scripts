@@ -1,0 +1,28 @@
+var ocgArray = this.getOCGs();
+var k;
+
+if (event.willCommit) {
+k = event.changeEx;
+console.println(k);
+}
+
+if (k == 0){
+for (var i = 0; i < ocgArray.length; i++) {
+	ocgArray[i].state = true;
+	}
+}
+
+else{
+for (var i = 0; i < ocgArray.length; i++) {
+	if (ocgArray[i].name == k) {
+		ocgArray[i].state = true;
+		}
+    else {
+		ocgArray[i].state = false;
+		}
+
+     if (ocgArray[i].name == 99) {
+		 ocgArray[i].state = true;
+	}
+}
+}
